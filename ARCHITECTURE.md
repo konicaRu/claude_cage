@@ -46,3 +46,11 @@ Windows 10 host
 - Локальная копия связана с origin konicaRu/claude_cage, ветка main.
 - Сохранён project-starter.md, дополнены исключения приватных данных/образов VM.
 - Среда Cage ещё не установлена; схема остаётся целевой.
+
+### 2026-11-11 — фактическое состояние после аудита
+- Host: Windows 10 Pro 22H2 x64; существующие WSL2/Docker/VBS сохранены.
+- Cage не обнаружен. Linux guest ещё не создан. Host Desktop/Code уже присутствуют.
+- Для Linux Cage нужен QEMU/WHPX: HypervisorPlatform выключен, Gate 1 не пройден.
+- Полный Hyper-V для Linux-схемы не требуется; VMP не заменяет HypervisorPlatform.
+- Добавлен docs/environment-audit.md с фактами, upstream и ограничениями проверки.
+- Требуется согласование порядка proxy/onboarding до установки; архитектура остаётся целевой.
