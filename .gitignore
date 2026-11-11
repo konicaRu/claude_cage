@@ -1,0 +1,29 @@
+# Secrets / credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets*
+*token*
+*cookies*
+*session*
+
+# Local proxy configuration / auth
+proxy.local.*
+*.proxy.local
+.claude/settings.local.json
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/*.local.*
+.idea/
+
+# Temporary
+*.tmp
+*.log
+tmp/
