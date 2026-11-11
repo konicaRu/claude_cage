@@ -41,3 +41,8 @@ Windows 10 host
 - Завершён project-starter checklist.
 - Выбраны Karpathy principles, Superpowers, Constitution и выборочные Matt Pocock Skills.
 - Replica, Humanizer, ub-mode и Playwright на старте отклонены.
+
+### 2026-11-11 — этап 0
+- Локальная копия связана с origin konicaRu/claude_cage, ветка main.
+- Сохранён project-starter.md, дополнены исключения приватных данных/образов VM.
+- Среда Cage ещё не установлена; схема остаётся целевой.

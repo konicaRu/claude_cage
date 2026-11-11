@@ -27,3 +27,24 @@ Thumbs.db
 *.tmp
 *.log
 tmp/
+
+# Private runtime data and VM images
+.local/
+.secrets/
+.ssh/
+id_rsa*
+id_ed25519*
+*.ovpn
+*.vhd
+*.vhdx
+*.qcow2
+*.vmdk
+*.iso
+*.db
+*.sqlite*
+proxy*.yaml
+proxy*.yml
+mihomo*.yaml
+mihomo*.yml
+.claude.json
+.claude/
