@@ -54,3 +54,18 @@ Windows 10 host
 - Полный Hyper-V для Linux-схемы не требуется; VMP не заменяет HypervisorPlatform.
 - Добавлен docs/environment-audit.md с фактами, upstream и ограничениями проверки.
 - Требуется согласование порядка proxy/onboarding до установки; архитектура остаётся целевой.
+
+### 2026-11-12 — Cage установлен, WHPX проверен
+
+- HypervisorPlatform включён; DISM не потребовал перезагрузку.
+- WHPX API и пустая тестовая QEMU VM проверены; Gate 1 закрыт.
+- Cage 0.1.7 установлен на C: в пользовательском Programs\Cage.
+- Постоянного Linux guest и настроенного proxy ещё нет; Gate 2 открыт.
+- Подробности и ограничения: docs/cage-install.md.
+
+### 2026-11-12 — выделенный прокси приобретён, проверена репутация
+
+- IPRoyal ISP Dedicated, Poland, 1 IP на 24 часа, Premium / Scamalytics; SOCKS5 12324.
+- На скриншотах пользователя: Proxy Tester OK/200, Scamalytics 0, AbuseIPDB 0% без жалоб; AS35179 / Korbank S. A., organization Hosting RS, Wroclaw.
+- Проверки выполнены веб-сервисами; подключение с ПК и маршрутизация Cage ещё не подтверждены. Целевая схема пока не реализована полностью.
+- Результаты и повторяемая инструкция: docs/proxy-validation.md. Секреты и исходные скриншоты в Git не сохранялись.
