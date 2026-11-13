@@ -27,6 +27,7 @@ Thumbs.db
 *.tmp
 *.log
 tmp/
+__pycache__/
 
 # Private runtime data and VM images
 .local/

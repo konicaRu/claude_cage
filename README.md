@@ -6,7 +6,11 @@
 
 **Этап 2 выполняется.** Gate 0 и Gate 1 пройдены: HypervisorPlatform включён, WHPX API и пробный запуск комплектного QEMU проверены. Cage 0.1.7 установлен на C:. Куплен IPRoyal ISP Dedicated Poland на сутки: веб-тестер SOCKS5 — OK/200, Scamalytics — 0, AbuseIPDB — 0% без жалоб. Debian 13 установлен, IP браузера и терминала совпал с прокси. Claude Desktop 5.1231.2 авторизован и ответил на тестовое сообщение. Сохранение сессии, Claude Code и cold start ещё не проверены. См. [аудит окружения](docs/environment-audit.md), [установку Cage](docs/cage-install.md) и [результаты / инструкцию проверки прокси](docs/proxy-validation.md).
 
-## Цель
+## Микрофон в Claude Desktop
+
+Realtek USB2.0 Audio автоматически подключается после запуска Cage и готовности Linux. Управляйте диктовкой кнопкой в Claude; отдельные команды не нужны. Если Claude не увидел устройство, перезапустите только Claude Desktop. Пока мост работает, захват Realtek постоянный; записи на диск нет. [Подробная инструкция](docs/microphone-bridge.md).
+
+## Цель проекта
 
 См. [GOAL.md](GOAL.md).
 
