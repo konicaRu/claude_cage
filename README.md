@@ -4,6 +4,8 @@
 
 ## Статус
 
+**Обновление 2026-11-17:** выбран новый прокси США **US ISP**, SOCKS5, порт **12324** (исправлен ошибочный 12323). Проверка выхода Cage показала United States / New York City; браузер Cage и терминал Linux подтвердили одинаковый ожидаемый IP. Claude Desktop/Code через новый узел, отказ нового прокси и cold start ещё не проверены. Подробности — в [MEMORY.md](MEMORY.md).
+
 **Этап 2 выполняется.** Gate 0 и Gate 1 пройдены: HypervisorPlatform включён, WHPX API и пробный запуск комплектного QEMU проверены. Cage 0.1.7 установлен на C:. Куплен IPRoyal ISP Dedicated Poland на сутки: веб-тестер SOCKS5 — OK/200, Scamalytics — 0, AbuseIPDB — 0% без жалоб. Debian 13 установлен, IP браузера и терминала совпал с прокси. Claude Desktop 5.1231.2 авторизован и ответил на тестовое сообщение. Сохранение сессии, Claude Code и cold start ещё не проверены. См. [аудит окружения](docs/environment-audit.md), [установку Cage](docs/cage-install.md) и [результаты / инструкцию проверки прокси](docs/proxy-validation.md).
 
 ## Микрофон в Claude Desktop
@@ -27,6 +29,7 @@ Realtek USB2.0 Audio автоматически подключается пос�
 - Язык общения и документации: русский.
 - Контекст: `MEMORY.md`, `ARCHITECTURE.md`, `README.md`.
 - Git/GitHub: да; push после завершённых проверяемых этапов.
+- По команде «пуш коммит» сначала заполнять `MEMORY.md` контекстом прошедшей работы, затем выполнять commit/push. Подробности — в [AGENTS.md](AGENTS.md).
 - Karpathy principles: да.
 - Superpowers-процесс: да.
 - Накопительные правила: нет.
