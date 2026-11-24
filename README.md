@@ -14,7 +14,7 @@ Realtek USB2.0 Audio автоматически подключается пос�
 
 ## VS Code через Cage
 
-Подключение **Cage** настроено через Microsoft Remote SSH; VS Code Server и расширение Claude Code установлены внутри Linux. Открыть: запустить Cage → в VS Code `Ctrl+Shift+P` → `Remote-SSH: Connect to Host…` → `Cage`. Тест чата отложен: текущему аккаунту требуется подходящая подписка. Порт SSH пока не обновляется автоматически после перезапуска VM. [Результаты и инструкция](docs/vscode-cage.md).
+Подключение **Cage** настроено через Microsoft Remote SSH; VS Code Server и расширение Claude Code установлены внутри Linux. Открыть: запустить Cage → в VS Code `Ctrl+Shift+P` → `Remote-SSH: Connect to Host…` → `Cage`. Тест чата отложен: текущему аккаунту требуется подходящая подписка. Порт SSH и ключ хоста после перезапуска VM обновляет `scripts\sync-cage-ssh.ps1` (запуск вручную; автозапуск написан, но не установлен). [Результаты и инструкция](docs/vscode-cage.md).
 
 ## Цель проекта
 
