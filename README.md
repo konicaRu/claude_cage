@@ -97,3 +97,11 @@ C:\claude_code_projects\claude_cage
 ## Следующий шаг
 
 Проверить первый экран Cage вручную, подтвердить принятие проверенного IP и настроить SOCKS5 локально. В onboarding сначала выбираются система и отдельный каталог данных, затем применяется прокси и только потом создаётся guest. Проверить egress, DNS и отказ прокси; Gate 2 закрывается после повторного запуска guest без ошибок. Суточный заказ продлить до истечения, если решено сохранить IP.
+
+
+## Одна папка в двух окнах VS Code
+
+- Для Codex откройте `%USERPROFILE%\.claude-cage-workspace` в обычном окне VS Code.
+- Для Claude Code откройте `/c/Users/<Windows user>/.claude-cage-workspace` в окне `SSH: Cage`. Вставьте фактическое имя пользователя Windows вместо `<Windows user>`.
+- Папку можно открыть сразу из PowerShell командой `code --new-window --remote ssh-remote+Cage /c/Users/<Windows user>/.claude-cage-workspace/`, заключив Linux-путь в кавычки. При запросе платформы выберите Linux.
+- Если удалённое окно показывает тайм-аут, закройте лишние окна и повторите подключение. Результат виден в панели вывода **Remote - SSH**. См. [настройку подключения](docs/vscode-cage.md).

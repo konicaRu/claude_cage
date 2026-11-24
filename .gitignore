@@ -30,6 +30,7 @@ tmp/
 __pycache__/
 
 # Private runtime data and VM images
+.codegraph/
 .local/
 .secrets/
 .ssh/
